@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos custom de Mamarracho */
+html { scroll-behavior: smooth; }
+body { background:#FF5200; font-family: Nunito, system-ui, sans-serif; }
+.logo { font-family:"Bagel Fat One",Impact,sans-serif; color:#fff; letter-spacing:.01em;
+        text-shadow: 3px 3px 0 #7C00FF, 5px 5px 0 #4a0099; }
+.boton { transition: transform .15s; }
+.boton:hover { transform: translate(-2px,-2px); }
+.boton:active { transform: translate(2px,2px); }
+:focus-visible { outline: 3px solid #7DD3FC; outline-offset: 3px; }
+.tanque-liquido { transition: height 1.4s cubic-bezier(.2,.8,.2,1); }
+@keyframes balanceo { 0%,100%{ transform: rotate(-4deg) } 50%{ transform: rotate(4deg) } }
+.mono { animation: balanceo 2.4s ease-in-out infinite; transform-origin: 50% 90%; }
+@media (prefers-reduced-motion: reduce) { .mono{animation:none} .tanque-liquido{transition:none} html{scroll-behavior:auto} }

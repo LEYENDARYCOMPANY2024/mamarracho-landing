@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mamarracho! · Cookies estilo New York en Buenos Aires</title>
+<meta name="description" content="Cookies reales estilo New York, hechas en Buenos Aires. Ayudanos a llegar a las 10.000 galletas para el Food Truck.">
+<link rel="icon" href="./favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="text-white antialiased">
+
+<!-- 1. HEADER -->
+<header class="px-5 py-4">
+  <div class="mx-auto max-w-6xl flex flex-wrap items-center justify-between gap-3">
+    <a href="#" class="logo text-3xl sm:text-4xl" aria-label="Mamarracho, ir al inicio">MAMARRACHO!</a>
+    <div class="flex items-center gap-3">
+      <span class="hidden sm:inline-block rounded-full bg-white text-mama-purpura font-extrabold text-sm px-4 py-2">Próximamente en Buenos Aires</span>
+      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener"
+         class="boton rounded-full bg-mama-purpura px-5 py-2 font-extrabold shadow-[3px_3px_0_#fff]">Seguinos en Instagram</a>
+    </div>
+  </div>
+  <p class="sm:hidden mx-auto max-w-6xl mt-3"><span class="inline-block rounded-full bg-white text-mama-purpura font-extrabold text-sm px-4 py-1.5">Próximamente en Buenos Aires</span></p>
+</header>
+
+<main>
+<!-- 2. HERO -->
+<section class="px-5 pt-8 pb-16">
+  <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="logo text-5xl sm:text-7xl leading-[1.02]">Cookies reales. Sin mamarrachos.</h1>
+      <p class="mt-6 text-xl sm:text-2xl font-bold max-w-md">New York cookies hechas en Buenos Aires, grandes, gruesas y con el centro bien blandito.</p>
+
+      <!-- CONTADOR / TANQUE -->
+      <div class="mt-10 rounded-3xl bg-mama-purpura p-6 shadow-[6px_6px_0_#fff] max-w-md" id="contador" data-vendidas="0" data-meta="10000">
+        <p class="font-extrabold text-mama-celeste">Meta del Food Truck</p>
+        <p class="mt-1 font-logo text-4xl sm:text-5xl" aria-live="polite"><span id="vendidas">0</span> / <span id="meta">10.000</span></p>
+        <p class="font-extrabold">cookies vendidas</p>
+        <div class="mt-4 flex items-center gap-4">
+          <div class="relative h-6 flex-1 rounded-full bg-white/20 overflow-hidden border-2 border-white" role="progressbar" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0" id="barra">
+            <div id="nivel" class="tanque-liquido absolute inset-y-0 left-0 bg-mama-celeste rounded-full" style="width:0%"></div>
+          </div>
+          <span class="font-extrabold w-12 text-right" id="porcentaje">0%</span>
+        </div>
+        <div class="mt-2 flex justify-between text-xs font-bold text-white/80"><span>Vacío</span><span>Tanque lleno</span></div>
+      </div>
+    </div>
+
+    <!-- ILUSTRACIÓN FOOD TRUCK -->
+    <figure class="relative">
+      <div class="aspect-[4/3] rounded-[2rem] bg-white shadow-[8px_8px_0_#7C00FF] border-4 border-white overflow-hidden grid place-items-center">
+        <img src="./assets/images/food-truck-concept.png" alt="Concepto del Food Truck de Mamarracho" class="w-full h-full object-cover" width="800" height="600">
+      </div>
+      <figcaption class="mt-3 text-sm font-bold text-white/90">Así va a ser el Food Truck (concepto).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 3. SOBRE EL PROYECTO -->
+<section id="proyecto" class="bg-white text-neutral-900 px-5 py-20">
+  <div class="mx-auto max-w-6xl grid lg:grid-cols-5 gap-10">
+    <h2 class="lg:col-span-2 font-logo text-4xl sm:text-5xl text-mama-purpura leading-tight">Probamos hasta que salió bien</h2>
+    <div class="lg:col-span-3 text-lg leading-relaxed space-y-5 max-w-prose">
+      <p>Mamarracho empezó en una cocina, con un montón de amigos y una obsesión: la cookie estilo New York. Hicimos tandas de prueba, tiramos las que no nos convencían y ajustamos hasta dar con la masa que queríamos.</p>
+      <p>Usamos ingredientes de calidad: manteca de verdad, chocolate que se derrite y harina elegida a conciencia. Cada cookie sale gruesa, dorada por fuera y blanda por dentro.</p>
+      <p>Empezamos como contenido de YouTube. Ahora queremos ser un proyecto gastronómico real, reconocido por la calidad de sus galletas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. COMUNIDAD & MASCOTA -->
+<section id="comunidad" class="px-5 py-20">
+  <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
+    <div class="order-2 lg:order-1">
+      <h2 class="logo text-4xl sm:text-6xl leading-tight">El mono skater manda</h2>
+      <p class="mt-5 text-xl font-bold max-w-md">Es nuestra mascota: un mono violeta que se desliza en skate y te saca la lengua. Y también es de la comunidad.</p>
+      <p class="mt-4 text-lg max-w-md">Votás sabores, nos mandás ideas y ves cada prueba de cocina antes que nadie. Todo pasa en <strong>@mamarracho.ar</strong>.</p>
+      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener"
+         class="boton inline-block mt-7 rounded-full bg-white text-mama-purpura px-6 py-3 font-extrabold shadow-[4px_4px_0_#7C00FF]">Sumate en Instagram</a>
+    </div>
+    <div class="order-1 lg:order-2 grid place-items-center">
+      <div class="w-72 sm:w-96 aspect-square rounded-full bg-mama-purpura grid place-items-center shadow-[8px_8px_0_#fff]">
+        <img src="./assets/images/mono-skate.png" alt="Mono violeta en skate sacando la lengua" class="mono w-4/5" width="400" height="400">
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 5. FOOTER & APOYO -->
+<footer id="apoyo" class="bg-mama-purpura px-5 pt-16 pb-8">
+  <div class="mx-auto max-w-6xl">
+    <div class="rounded-3xl bg-white text-neutral-900 p-8 sm:p-12 shadow-[8px_8px_0_#FF5200]">
+      <h2 class="font-logo text-3xl sm:text-5xl text-mama-purpura leading-tight">Aportá tu granito de harina para el Food Truck</h2>
+      <p class="mt-4 text-lg max-w-xl">Cada cookie que se venda llena un poco más el tanque. Compartí el proyecto, seguinos y ayudanos a llegar a las 10.000.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener" class="boton rounded-full bg-mama-naranja text-white px-6 py-3 font-extrabold">Seguinos y compartí</a>
+        <button type="button" id="compartir" class="boton rounded-full border-4 border-mama-purpura text-mama-purpura px-6 py-2.5 font-extrabold">Copiar link de la web</button>
+      </div>
+      <p id="aviso" class="mt-3 font-bold text-mama-purpura min-h-6" role="status"></p>
+    </div>
+    <div class="mt-10 flex flex-wrap items-center justify-between gap-4">
+      <span class="logo text-2xl">MAMARRACHO!</span>
+      <nav aria-label="Redes sociales" class="flex gap-5 font-extrabold">
+        <a class="underline underline-offset-4 hover:text-mama-celeste" href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener">Instagram</a>
+        <a class="underline underline-offset-4 hover:text-mama-celeste" href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+      <p class="text-sm text-white/80 w-full sm:w-auto">© 2026 Mamarracho · Buenos Aires, Argentina</p>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="./js/counter.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
