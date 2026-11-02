@@ -3,75 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mamarracho! · Cookies estilo New York en Buenos Aires</title>
-<meta name="description" content="Cookies reales estilo New York, hechas en Buenos Aires. Ayudanos a llegar a las 10.000 galletas para el Food Truck.">
+<title>Mamarracho! · Un proyecto en marcha</title>
+<meta name="description" content="Mamarracho es un proyecto en marcha. Nuestra primera meta: vender 10.000 galletas y acercarnos al Food Truck.">
 <link rel="icon" href="./favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="text-white antialiased">
 
-<!-- 1. HEADER -->
-<header class="px-5 py-4">
-  <div class="mx-auto max-w-6xl flex flex-wrap items-center justify-between gap-3">
-    <a href="#" class="logo text-3xl sm:text-4xl" aria-label="Mamarracho, ir al inicio">MAMARRACHO!</a>
-    <div class="flex items-center gap-3">
-      <span class="hidden sm:inline-block rounded-full bg-white text-mama-purpura font-extrabold text-sm px-4 py-2">Próximamente en Buenos Aires</span>
-      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener"
-         class="boton rounded-full bg-mama-purpura px-5 py-2 font-extrabold shadow-[3px_3px_0_#fff]">Seguinos en Instagram</a>
+<!-- 1. HEADER / NAVEGACIÓN -->
+<header class="sticky top-0 z-50 border-b border-white/15 bg-mama-naranja/90 px-5 py-3 backdrop-blur-md">
+  <div class="relative mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-4 lg:grid-cols-[1fr_auto_1fr]">
+    <a href="#inicio" class="logo justify-self-start text-2xl sm:text-3xl" aria-label="Mamarracho, ir al inicio">MAMARRACHO!</a>
+
+    <nav id="navegacion-principal" aria-label="Navegación principal"
+      class="absolute left-0 right-0 top-full mt-3 hidden rounded-2xl border border-white/20 bg-mama-naranja p-2 shadow-xl lg:static lg:col-start-2 lg:mt-0 lg:block lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+      <ul class="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-5">
+        <li class="border-b border-white/15 last:border-0 lg:border-0"><a href="#inicio" class="block rounded-xl px-4 py-3 font-extrabold hover:bg-white/10 lg:px-2 lg:py-2">Inicio</a></li>
+        <li class="border-b border-white/15 last:border-0 lg:border-0"><a href="#proyecto" class="block rounded-xl px-4 py-3 font-extrabold hover:bg-white/10 lg:px-2 lg:py-2">El Proyecto</a></li>
+        <li class="border-b border-white/15 last:border-0 lg:border-0"><a href="#contador" class="flex items-center gap-2 rounded-xl px-4 py-3 font-extrabold hover:bg-white/10 lg:px-2 lg:py-2">
+          Meta 10k <span class="h-2 w-2 rounded-full bg-white shadow-[0_0_0_3px_rgba(255,255,255,0.2)]" aria-label="Meta activa"></span>
+        </a></li>
+        <li class="border-b border-white/15 last:border-0 lg:border-0"><a href="#novedades" class="block rounded-xl px-4 py-3 font-extrabold hover:bg-white/10 lg:px-2 lg:py-2">Novedades</a></li>
+        <li class="border-b border-white/15 last:border-0 lg:border-0"><a href="#comunidad" class="block rounded-xl px-4 py-3 font-extrabold hover:bg-white/10 lg:px-2 lg:py-2">Comunidad</a></li>
+      </ul>
+    </nav>
+
+    <div class="col-start-2 flex shrink-0 items-center justify-self-end gap-3 lg:col-start-3">
+      <button id="menu-movil" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border-2 border-white/70 text-white hover:bg-white/10 lg:hidden"
+        aria-label="Abrir menú" aria-expanded="false" aria-controls="navegacion-principal">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="h-6 w-6">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
     </div>
   </div>
-  <p class="sm:hidden mx-auto max-w-6xl mt-3"><span class="inline-block rounded-full bg-white text-mama-purpura font-extrabold text-sm px-4 py-1.5">Próximamente en Buenos Aires</span></p>
 </header>
 
 <main>
-<!-- 2. HERO -->
-<section class="px-5 pt-8 pb-16">
-  <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <h1 class="logo text-5xl sm:text-7xl leading-[1.02]">Cookies reales. Sin mamarrachos.</h1>
-      <p class="mt-6 text-xl sm:text-2xl font-bold max-w-md">New York cookies hechas en Buenos Aires, grandes, gruesas y con el centro bien blandito.</p>
+<!-- 2. HERO / PRESENTACIÓN Y META -->
+<section id="inicio" class="flex min-h-[calc(100svh-4.25rem)] items-center overflow-hidden px-5 pb-20 pt-10 sm:pt-16">
+  <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
+    <div class="lg:col-span-7">
+      <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-extrabold shadow-sm">
+        <span aria-hidden="true">🇦🇷</span> Un proyecto nacido en Buenos Aires
+      </p>
+      <h1 class="logo max-w-3xl text-5xl leading-[1.02] sm:text-7xl">Muchas ideas.<br class="hidden sm:block"> Una primera meta.</h1>
+      <p class="mt-6 max-w-xl text-lg font-bold leading-relaxed sm:text-xl">Mamarracho es un proyecto en crecimiento. El primer paso es vender nuestras galletas y llegar a las 10.000: una meta que nos acerca al Food Truck y a todo lo que queremos construir.</p>
 
       <!-- CONTADOR / TANQUE -->
-      <div class="mt-10 rounded-3xl bg-mama-purpura p-6 shadow-[6px_6px_0_#fff] max-w-md" id="contador" data-vendidas="0" data-meta="10000">
-        <p class="font-extrabold text-mama-celeste">Meta del Food Truck</p>
-        <p class="mt-1 font-logo text-4xl sm:text-5xl" aria-live="polite"><span id="vendidas">0</span> / <span id="meta">10.000</span></p>
-        <p class="font-extrabold">cookies vendidas</p>
-        <div class="mt-4 flex items-center gap-4">
-          <div class="relative h-6 flex-1 rounded-full bg-white/20 overflow-hidden border-2 border-white" role="progressbar" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0" id="barra">
-            <div id="nivel" class="tanque-liquido absolute inset-y-0 left-0 bg-mama-celeste rounded-full" style="width:0%"></div>
-          </div>
-          <span class="font-extrabold w-12 text-right" id="porcentaje">0%</span>
+      <div class="mt-8 max-w-xl rounded-3xl border-2 border-white bg-white p-5 text-mama-purpura shadow-[6px_6px_0_#7C00FF] sm:p-6" id="contador" data-vendidas="0" data-meta="10000">
+        <div class="flex flex-wrap items-end justify-between gap-2">
+          <p class="font-extrabold uppercase tracking-wide">Nuestra primera meta</p>
+          <p class="text-xs font-extrabold uppercase tracking-widest text-neutral-500">El tanque de los sueños</p>
         </div>
-        <div class="mt-2 flex justify-between text-xs font-bold text-white/80"><span>Vacío</span><span>Tanque lleno</span></div>
+        <p class="mt-2 font-logo text-4xl leading-tight sm:text-5xl" aria-live="polite"><span id="vendidas">0</span><span class="px-2 text-2xl text-neutral-400">/</span><span id="meta">10.000</span></p>
+        <p class="font-extrabold uppercase tracking-wide">cookies vendidas</p>
+        <div class="mt-4 flex items-center gap-4">
+          <div class="relative h-6 flex-1 overflow-hidden rounded-full border-2 border-mama-purpura/20 bg-purple-100" role="progressbar" aria-label="Progreso hacia la meta de 10.000 cookies" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0" id="barra">
+            <div id="nivel" class="tanque-liquido absolute inset-y-0 left-0 rounded-full bg-mama-purpura" style="width:0%"></div>
+          </div>
+          <span class="w-12 text-right font-extrabold" id="porcentaje">0%</span>
+        </div>
+        <div class="mt-2 flex justify-between text-xs font-bold text-neutral-500"><span>Vacío</span><span>Tanque lleno</span></div>
+      </div>
+
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#contador" class="boton inline-flex items-center justify-center rounded-full bg-mama-purpura px-6 py-3 font-extrabold text-white shadow-[4px_4px_0_#fff] hover:bg-purple-700">
+          Ver el avance del Food Truck
+        </a>
+        <a href="#proyecto" class="boton inline-flex items-center justify-center rounded-full border-2 border-white px-6 py-3 font-extrabold text-white hover:bg-white/10">
+          Conocé la historia
+        </a>
       </div>
     </div>
 
     <!-- ILUSTRACIÓN FOOD TRUCK -->
-    <figure class="relative">
-      <div class="aspect-[4/3] rounded-[2rem] bg-white shadow-[8px_8px_0_#7C00FF] border-4 border-white overflow-hidden grid place-items-center">
+    <figure class="relative mx-auto w-full max-w-xl lg:col-span-5 lg:max-w-none">
+      <div class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-mama-purpura sm:-right-6 sm:-top-6 sm:h-32 sm:w-32" aria-hidden="true"></div>
+      <div class="relative aspect-[4/3] rotate-1 overflow-hidden rounded-[2rem] border-4 border-white bg-white shadow-[8px_8px_0_#7C00FF]">
         <img src="./assets/images/food-truck-concept.png" alt="Concepto del Food Truck de Mamarracho" class="w-full h-full object-cover" width="800" height="600">
       </div>
-      <figcaption class="mt-3 text-sm font-bold text-white/90">Así va a ser el Food Truck (concepto).</figcaption>
+      <figcaption class="relative mt-4 inline-flex -rotate-1 rounded-full bg-white px-4 py-2 text-sm font-extrabold text-mama-purpura shadow-md">Así va a ser el Food Truck (concepto).</figcaption>
     </figure>
   </div>
 </section>
 
 <!-- 3. SOBRE EL PROYECTO -->
 <section id="proyecto" class="bg-white text-neutral-900 px-5 py-20">
-  <div class="mx-auto max-w-6xl grid lg:grid-cols-5 gap-10">
+  <div class="mx-auto max-w-7xl grid lg:grid-cols-5 gap-10">
     <h2 class="lg:col-span-2 font-logo text-4xl sm:text-5xl text-mama-purpura leading-tight">Probamos hasta que salió bien</h2>
     <div class="lg:col-span-3 text-lg leading-relaxed space-y-5 max-w-prose">
-      <p>Mamarracho empezó en una cocina, con un montón de amigos y una obsesión: la cookie estilo New York. Hicimos tandas de prueba, tiramos las que no nos convencían y ajustamos hasta dar con la masa que queríamos.</p>
+      <p>Mamarracho empezó en una cocina, con un montón de amigos y una obsesión: crear la cookie perfecta. Hicimos tandas de prueba, tiramos las que no nos convencían y ajustamos hasta dar con la masa que queríamos.</p>
       <p>Usamos ingredientes de calidad: manteca de verdad, chocolate que se derrite y harina elegida a conciencia. Cada cookie sale gruesa, dorada por fuera y blanda por dentro.</p>
-      <p>Empezamos como contenido de YouTube. Ahora queremos ser un proyecto gastronómico real, reconocido por la calidad de sus galletas.</p>
+      <p>Empezamos como contenido de YouTube. Ahora queremos construir un proyecto gastronómico real, empezando por nuestras galletas y creciendo junto a la comunidad.</p>
     </div>
   </div>
 </section>
 
-<!-- 4. COMUNIDAD & MASCOTA -->
+<!-- 4. NOVEDADES / INSTAGRAM -->
+<section id="novedades" class="bg-orange-50 px-5 py-20 text-neutral-900">
+  <div class="mx-auto max-w-7xl">
+    <div class="flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-end">
+      <div>
+        <p class="font-extrabold uppercase tracking-widest text-mama-purpura">El día a día del proyecto</p>
+        <h2 class="mt-2 font-logo text-4xl leading-tight text-mama-purpura sm:text-5xl">Lo que pasa en Mamarracho</h2>
+        <p class="mt-3 max-w-2xl text-lg leading-relaxed">Compartimos cada avance, las ideas y el camino hacia nuestra primera meta en Instagram.</p>
+      </div>
+      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener"
+        class="boton inline-flex shrink-0 items-center gap-2 rounded-full bg-mama-purpura px-6 py-3 font-extrabold text-white shadow-[4px_4px_0_#FF5200] hover:bg-purple-700">
+        <span aria-hidden="true">◎</span> Ver @mamarracho.ar
+      </a>
+    </div>
+
+    <!-- VITRINA SOCIAL: reemplazar estas tarjetas por los posteos recientes cuando estén disponibles sus enlaces e imágenes. -->
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener" class="group overflow-hidden rounded-3xl border border-neutral-200 bg-orange-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        <div class="aspect-[4/3] overflow-hidden bg-mama-naranja">
+          <img src="./assets/images/food-truck-concept.png" alt="Diseño conceptual del futuro Food Truck" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" width="800" height="600" loading="lazy">
+        </div>
+        <div class="p-5">
+          <p class="text-sm font-extrabold uppercase tracking-wide text-mama-purpura">El primer gran objetivo</p>
+          <p class="mt-2 font-bold">Cada galleta nos acerca un poco más al Food Truck.</p>
+        </div>
+      </a>
+      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener" class="group overflow-hidden rounded-3xl border border-neutral-200 bg-purple-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        <div class="grid aspect-[4/3] place-items-center overflow-hidden bg-mama-purpura p-8">
+          <img src="./assets/images/mono-skate.png" alt="El mono skater, mascota de Mamarracho" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" width="400" height="400" loading="lazy">
+        </div>
+        <div class="p-5">
+          <p class="text-sm font-extrabold uppercase tracking-wide text-mama-purpura">La comunidad</p>
+          <p class="mt-2 font-bold">Ideas, sabores y un mono skater que también es parte del proyecto.</p>
+        </div>
+      </a>
+      <a href="https://instagram.com/mamarracho.ar" target="_blank" rel="noopener" class="group flex min-h-64 flex-col justify-between overflow-hidden rounded-3xl border border-neutral-200 bg-mama-naranja p-7 text-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:col-span-2 lg:col-span-1">
+        <span class="self-start rounded-full bg-white/15 px-4 py-2 text-sm font-extrabold">EN MARCHA</span>
+        <div>
+          <p class="font-logo text-6xl leading-none drop-shadow-[3px_3px_0_#7C00FF]">10.000</p>
+          <p class="mt-3 text-lg font-extrabold">galletas para alcanzar nuestra primera meta.</p>
+          <span class="mt-5 inline-flex font-extrabold underline underline-offset-4">Seguí los avances en Instagram ↗</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. COMUNIDAD & MASCOTA -->
 <section id="comunidad" class="px-5 py-20">
-  <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
+  <div class="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
     <div class="order-2 lg:order-1">
       <h2 class="logo text-4xl sm:text-6xl leading-tight">El mono skater manda</h2>
       <p class="mt-5 text-xl font-bold max-w-md">Es nuestra mascota: un mono violeta que se desliza en skate y te saca la lengua. Y también es de la comunidad.</p>
@@ -90,7 +169,7 @@
 
 <!-- 5. FOOTER & APOYO -->
 <footer id="apoyo" class="bg-mama-purpura px-5 pt-16 pb-8">
-  <div class="mx-auto max-w-6xl">
+  <div class="mx-auto max-w-7xl">
     <div class="rounded-3xl bg-white text-neutral-900 p-8 sm:p-12 shadow-[8px_8px_0_#FF5200]">
       <h2 class="font-logo text-3xl sm:text-5xl text-mama-purpura leading-tight">Aportá tu granito de harina para el Food Truck</h2>
       <p class="mt-4 text-lg max-w-xl">Cada cookie que se venda llena un poco más el tanque. Compartí el proyecto, seguinos y ayudanos a llegar a las 10.000.</p>

@@ -11,7 +11,7 @@ body { background:#FF5200; font-family: Nunito, system-ui, sans-serif; }
 .boton:hover { transform: translate(-2px,-2px); }
 .boton:active { transform: translate(2px,2px); }
 :focus-visible { outline: 3px solid #7DD3FC; outline-offset: 3px; }
-.tanque-liquido { transition: height 1.4s cubic-bezier(.2,.8,.2,1); }
+.tanque-liquido { transition: width 1.4s cubic-bezier(.2,.8,.2,1); }
 @keyframes balanceo { 0%,100%{ transform: rotate(-4deg) } 50%{ transform: rotate(4deg) } }
 .mono { animation: balanceo 2.4s ease-in-out infinite; transform-origin: 50% 90%; }
 @media (prefers-reduced-motion: reduce) { .mono{animation:none} .tanque-liquido{transition:none} html{scroll-behavior:auto} }
